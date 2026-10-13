@@ -1,3 +1,7 @@
+
+import MarqueeText from "react-marquee-text"
+import "react-marquee-text/dist/styles.css"
+
 import React from 'react';
 
 const Marquee = async  () => {
@@ -12,20 +16,12 @@ const Marquee = async  () => {
 
     return (
         <div>
-            {data.slice(0,10).map((elm,idx)=>{
-                return(
-                    <>
-                    <div  className="flex items-center justify-evenly">
-                        <h1 key={idx}>{elm.nameBn}</h1>
-   <h1 key={idx}>{elm.today}</h1>
-                    </div>
-
-   
-                    </>
-                  
-                   
-                )
-            })}
+              <MarqueeText duration={20}>
+{data.map((elm,idx)=><span key={idx}>
+                <span>  {elm.nameBn}</span>
+                <span>✦</span>
+            </span>)}
+    </MarqueeText>
         </div>
     );
 };
