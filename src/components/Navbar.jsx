@@ -1,6 +1,9 @@
+import Navlink from "./Navlink";
+
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white">
+    <>
+     <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white">
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-3 sm:h-16 sm:px-6 lg:px-8">
         {/* Left: Logo */}
         <div className="flex items-center gap-2">
@@ -29,5 +32,8 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
+    <Navlink></Navlink>
+    </>
+   
   );
 }
