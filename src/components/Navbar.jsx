@@ -11,7 +11,7 @@ export default function Navbar() {
         L
           </span>
           <span className="text-lg font-semibold text-gray-900 sm:text-xl">
-          Bazar
+          বাজার দর
           </span>
         </div>
 
@@ -21,13 +21,13 @@ export default function Navbar() {
             type="button"
             className="rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-700 transition hover:bg-gray-100 sm:px-4 sm:py-2 sm:text-sm"
           >
-            Sign In
+         সাইন ইন
           </button>
           <button
             type="button"
             className="rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-indigo-700 sm:px-4 sm:py-2 sm:text-sm"
           >
-            Sign Up
+            সাইন আপ
           </button>
         </div>
       </div>
