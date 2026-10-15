@@ -21,7 +21,9 @@ console.log(data)
                 <span >  {elm.nameBn}
                     <span>{elm.image}</span>
                     <span>{elm.today}টাকা/কেজি</span>
+                   <span>{elm.change.dir === "up" ? "📈" : "📉"}</span>
                       <span>{elm.change.pct.toLocaleString("bn-BD")}％</span>
+                      
                 </span>
                 <span className="mx-5">👉</span>
             </span>)}
