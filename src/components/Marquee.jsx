@@ -10,7 +10,7 @@ const Marquee = async  () => {
     const res= await fetch("https://openapi.programming-hero.com/api/bazardor/products")
 
     const data = await res.json()
-// console.log(data)
+console.log(data)
 
 
 
@@ -21,6 +21,7 @@ const Marquee = async  () => {
                 <span >  {elm.nameBn}
                     <span>{elm.image}</span>
                     <span>{elm.today}টাকা/কেজি</span>
+                      <span>{elm.change.pct.toLocaleString("bn-BD")}％</span>
                 </span>
                 <span className="mx-5">👉</span>
             </span>)}
