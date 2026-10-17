@@ -10,7 +10,7 @@ const Marquee = async  () => {
     const res= await fetch("https://openapi.programming-hero.com/api/bazardor/products")
 
     const data = await res.json()
-console.log(data)
+// console.log(data)
 
 
 
