@@ -9,6 +9,7 @@ export default function Home() {
      <Marquee></Marquee>
      <Hero></Hero>
      <PriceUp></PriceUp>
+     
     </div>
   );
 }
