@@ -17,8 +17,8 @@ const PriceUp = async () => {
   // Sort descending and get top 6
   const upPct = [...upProducts]
     .sort((a, b) => b.change.pct - a.change.pct)
-    .slice(0, 6);
-
+    .slice(0, 6)
+    
   return (
     <section className="container mx-auto px-4 py-6">
       {/* Section heading */}
@@ -37,7 +37,7 @@ const PriceUp = async () => {
           >
             {/* Product icon */}
             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-red-50 text-2xl">
-              {elm.categoryIcon || elm.image || "🛒"}
+              {elm.image || elm.categoryIcon || "🛒"}
             </div>
 
             {/* Product name */}
