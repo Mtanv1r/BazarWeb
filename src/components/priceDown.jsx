@@ -23,7 +23,7 @@ const PriceDown = async () => {
          <section className="container mx-auto px-4 py-6">
               {/* Section heading */}
       <div className="mb-4 flex items-center gap-2">
-        <span className="text-xl">📈</span>
+        <span className="text-xl">📉</span>
         <h2 className="text-lg text-white font-bold text-gray-800 md:text-xl">
           দাম কমেছে
         </h2>
