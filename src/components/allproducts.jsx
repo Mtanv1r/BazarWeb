@@ -48,19 +48,13 @@ const allproducts = async () => {
 
             {/* Price increase percentage */}
             <div className="mt-2 inline-flex items-center gap-1 rounded-md bg-red-50 px-2 py-1 text-xs font-semibold text-red-600">
-              📉
+              <span>{elm.change.dir === "up" ? "📈" : "📉" }</span>
               {Number(elm.change.pct).toLocaleString("bn-BD")}
               <span>%</span>
             </div>
           </div>
         ))}
       </div>
-
-
-
-
-
-
 
         </section>
     );
