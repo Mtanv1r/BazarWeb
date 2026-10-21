@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navlink from "./Navlink";
 
 export default function Navbar() {
@@ -23,12 +24,20 @@ export default function Navbar() {
           >
          সাইন ইন
           </button>
-          <button
+          <Link href={"/signup"}>
+           <button
             type="button"
             className="rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-indigo-700 sm:px-4 sm:py-2 sm:text-sm"
           >
             সাইন আপ
           </button>
+          </Link>
+          {/* <button
+            type="button"
+            className="rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-indigo-700 sm:px-4 sm:py-2 sm:text-sm"
+          >
+            সাইন আপ
+          </button> */}
         </div>
       </div>
     </nav>
