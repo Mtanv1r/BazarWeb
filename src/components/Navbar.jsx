@@ -18,12 +18,15 @@ export default function Navbar() {
 
         {/* Right: Buttons */}
         <div className="flex items-center gap-2 sm:gap-3">
+          <Link href={"/signin"}>
           <button
             type="button"
             className="rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-700 transition hover:bg-gray-100 sm:px-4 sm:py-2 sm:text-sm"
           >
          সাইন ইন
           </button>
+          </Link>
+      
           <Link href={"/signup"}>
            <button
             type="button"
